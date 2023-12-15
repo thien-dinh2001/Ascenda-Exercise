@@ -13,9 +13,7 @@ To run the project, follow the steps below:
 
 Clone the repository:
 
-    `git clone https://github.com/your-username/your-repository.git`
-
-    ```bash
+    ```
     git clone https://github.com/your-username/your-repository.git
     ```
 
@@ -25,10 +23,10 @@ Put your input.json file in the data folder.
 
 To run the project, use the following command:
 
-    ```bash
+    ```
     python run.py <checkin-date>
     ```
 
-Note: Please change the content of checkin-date to your actual checkin date.
+**Note:** Please change the content of checkin-date to your actual checkin date.
 
 The project will create an output.json file in the root folder. 

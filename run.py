@@ -19,8 +19,12 @@ def main(checkin_date):
     category_filter = CategoryValidation(VALID_CATEGORY)
     selector = OfferSelector()
 
-    checkin = datetime.strptime(checkin_date, '''%Y-%m-%d''') 
-
+    try: 
+        checkin = datetime.strptime(checkin_date, '''%Y-%m-%d''') 
+    except ValueError:
+        print(f"Error: The provided date '{checkin_date}' is not in the expected format (YYYY-MM-DD).")
+        sys.exit(1)
+    
     gen = input_handler.read()
     selected_offers = [None, None]
     offer = next(gen, None)
@@ -32,7 +36,7 @@ def main(checkin_date):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print("Usage: python script.py <checkin_date>")
+        print("Usage: python run.py <checkin_date>")
         sys.exit(1)
 
     checkin_date = sys.argv[1]
