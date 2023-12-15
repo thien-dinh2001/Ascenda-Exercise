@@ -24,7 +24,7 @@ Put your input.json file in the data folder.
 To run the project, use the following command:
 
     ```bash
-    python run.py <check-in-date>
+    python run.py <checkin-date>
     ```
 
 The project will create an output.json file in the root folder. 
