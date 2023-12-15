@@ -13,7 +13,7 @@ To run the project, follow the steps below:
 
 Clone the repository:
 
-```
+```bash
 git clone https://github.com/your-username/your-repository.git
 ```
 
