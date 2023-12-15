@@ -1,6 +1,7 @@
 from handler.interfaces.offer_selector_interface import IOfferSelector
 
 class OfferSelector(IOfferSelector):
+    
     def select_offer(self, offer, first, second):
         if first is None:
             first = offer

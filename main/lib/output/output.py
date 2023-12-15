@@ -11,8 +11,17 @@ class OutputHandler(IOutputHandler):
 
     def write(self, selected_offers: List[Offer]):
         serialized_offers = []
+
+        if None not in selected_offers:
+            if selected_offers[0].id > selected_offers[1].id:
+                t = selected_offers[0]
+                selected_offers[0] = selected_offers[1]
+                selected_offers[1] = t  
+
         for offer in selected_offers:
-            serialized_offers.append(offer.to_dict())
+            if offer is not None:
+                serialized_offers.append(offer.to_dict())
+                
         formatted_data = {"offers": serialized_offers}   
         with open(self.path, 'w') as json_file:
             json.dump(formatted_data, json_file, default= self._serialize, indent=2)
