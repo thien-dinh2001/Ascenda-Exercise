@@ -23,10 +23,10 @@ Put your input.json file in the data folder.
 
 To run the project, use the following command:
 
+```bash
+python run.py <checkin-date>
+```
 
-    python run.py <checkin-date>
-    
-
-**Note:** Please change the content of checkin-date to your actual checkin date.
+**Note:** Please change the content of checkin-date to your actual checkin date. The argument should follow this format: "Y-m-d".
 
 The project will create an output.json file in the root folder. 
