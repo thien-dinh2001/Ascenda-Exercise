@@ -7,7 +7,7 @@ To run the project, follow the steps below:
 
 ### Prerequisites
 
-- Python (version 3)
+- Python (version 3.10.2)
 
 ### Installation
 
@@ -17,19 +17,14 @@ Clone the repository:
     git clone https://github.com/your-username/your-repository.git
     ```
 
-### Overview
+### Usage
 
 Put your input.json file in the data folder.
-
-Run the 
-
-The project will create an output.json file in the root folder. 
-
-
-### Usage
 
 To run the project, use the following command:
 
     ```bash
     python run.py <check-in-date>
     ```
+
+The project will create an output.json file in the root folder. 
