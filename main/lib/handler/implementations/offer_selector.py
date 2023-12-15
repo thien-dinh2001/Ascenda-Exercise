@@ -10,9 +10,7 @@ class OfferSelector(IOfferSelector):
             else:
                 second = first
                 first = offer
-        elif second is None:
-            second = offer
-        elif offer < second:
-            if offer.category == second.category or offer.category != first.category:
+        elif offer.category != first.category:
+            if second is None or offer < second:
                 second = offer
         return [first, second]
